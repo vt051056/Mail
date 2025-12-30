@@ -1,0 +1,176 @@
+object F_doctypeView: TF_doctypeView
+  Left = 239
+  Top = 114
+  Caption = #1058#1080#1087#1099' '#1076#1086#1082#1091#1084#1077#1085#1090#1086#1074
+  ClientHeight = 507
+  ClientWidth = 710
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DBGrid1: TDBGrid
+    Left = 0
+    Top = 49
+    Width = 710
+    Height = 458
+    Align = alClient
+    DataSource = DM1.DSQDocType_View
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+    OnCellClick = DBGrid1CellClick
+    OnDblClick = DBGrid1DblClick
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 710
+    Height = 49
+    Align = alTop
+    TabOrder = 1
+    object DBNavigator1: TDBNavigator
+      Left = 5
+      Top = 12
+      Width = 180
+      Height = 25
+      DataSource = DM1.DSQDocType_View
+      VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbInsert, nbDelete, nbEdit, nbPost, nbCancel]
+      TabOrder = 0
+    end
+    object GroupBox1: TGroupBox
+      Left = 268
+      Top = 6
+      Width = 229
+      Height = 39
+      Caption = #1055#1086#1080#1089#1082
+      TabOrder = 1
+      object Edit1: TEdit
+        Left = 8
+        Top = 14
+        Width = 79
+        Height = 21
+        TabOrder = 0
+        OnChange = Edit1Change
+      end
+      object BBSearchDown: TBitBtn
+        Left = 98
+        Top = 10
+        Width = 25
+        Height = 25
+        Hint = #1055#1086#1080#1089#1082' '#1074#1085#1080#1079
+        Glyph.Data = {
+          76010000424D7601000000000000760000002800000020000000100000000100
+          04000000000000010000120B0000120B00001000000000000000000000000000
+          800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333033333
+          33333333373F33333333333330B03333333333337F7F33333333333330F03333
+          333333337F7FF3333333333330B00333333333337F773FF33333333330F0F003
+          333333337F7F773F3333333330B0B0B0333333337F7F7F7F3333333300F0F0F0
+          333333377F73737F33333330B0BFBFB03333337F7F33337F33333330F0FBFBF0
+          3333337F7333337F33333330BFBFBFB033333373F3333373333333330BFBFB03
+          33333337FFFFF7FF3333333300000000333333377777777F333333330EEEEEE0
+          33333337FFFFFF7FF3333333000000000333333777777777F33333330000000B
+          03333337777777F7F33333330000000003333337777777773333}
+        NumGlyphs = 2
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 1
+        OnClick = BBSearchDownClick
+      end
+      object BBSearchUp: TBitBtn
+        Left = 128
+        Top = 10
+        Width = 25
+        Height = 25
+        Hint = #1055#1086#1080#1089#1082' '#1074#1074#1077#1088#1093
+        Glyph.Data = {
+          76010000424D7601000000000000760000002800000020000000100000000100
+          04000000000000010000120B0000120B00001000000000000000000000000000
+          800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333000000000
+          333333777777777F33333330B00000003333337F7777777F3333333000000000
+          333333777777777F333333330EEEEEE033333337FFFFFF7F3333333300000000
+          333333377777777F3333333330BFBFB03333333373333373F33333330BFBFBFB
+          03333337F33333F7F33333330FBFBF0F03333337F33337F7F33333330BFBFB0B
+          03333337F3F3F7F7333333330F0F0F0033333337F7F7F773333333330B0B0B03
+          3333333737F7F7F333333333300F0F03333333337737F7F33333333333300B03
+          333333333377F7F33333333333330F03333333333337F7F33333333333330B03
+          3333333333373733333333333333303333333333333373333333}
+        NumGlyphs = 2
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 2
+        OnClick = BBSearchUpClick
+      end
+      object CheckBox1: TCheckBox
+        Left = 158
+        Top = 14
+        Width = 67
+        Height = 17
+        Hint = #1042#1082#1083#1102#1095#1080#1090#1100' '#1087#1086#1080#1089#1082' '#1087#1086' '#1082#1086#1085#1090#1077#1082#1089#1090#1091
+        Caption = #1082#1086#1085#1090#1077#1082#1089#1090
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 3
+        OnClick = CheckBox1Click
+      end
+    end
+    object BBRefresh: TBitBtn
+      Left = 190
+      Top = 12
+      Width = 25
+      Height = 25
+      Hint = #1054#1089#1074#1077#1078#1080#1090#1100' '#1076#1072#1085#1085#1099#1077
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000130B0000130B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        3333333333FFFFF3333333333999993333333333F77777FFF333333999999999
+        3333333777333777FF33339993707399933333773337F3777FF3399933000339
+        9933377333777F3377F3399333707333993337733337333337FF993333333333
+        399377F33333F333377F993333303333399377F33337FF333373993333707333
+        333377F333777F333333993333101333333377F333777F3FFFFF993333000399
+        999377FF33777F77777F3993330003399993373FF3777F37777F399933000333
+        99933773FF777F3F777F339993707399999333773F373F77777F333999999999
+        3393333777333777337333333999993333333333377777333333}
+      NumGlyphs = 2
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 2
+      OnClick = BBRefreshClick
+    end
+    object BitBtn1: TBitBtn
+      Left = 508
+      Top = 14
+      Width = 75
+      Height = 25
+      Caption = #1042#1099#1073#1086#1088
+      Kind = bkOK
+      NumGlyphs = 2
+      TabOrder = 3
+    end
+    object BitBtn2: TBitBtn
+      Left = 610
+      Top = 16
+      Width = 83
+      Height = 25
+      Caption = #1057#1073#1088#1086#1089
+      Kind = bkCancel
+      NumGlyphs = 2
+      TabOrder = 4
+    end
+  end
+end

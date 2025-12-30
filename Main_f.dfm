@@ -2,7 +2,7 @@ object F_Main: TF_Main
   Left = 0
   Top = 0
   Caption = #1056#1072#1073#1086#1090#1072' '#1089' '#1087#1086#1089#1090#1072#1074#1097#1080#1082#1072#1084#1080
-  ClientHeight = 205
+  ClientHeight = 186
   ClientWidth = 748
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -22,10 +22,10 @@ object F_Main: TF_Main
     Left = 0
     Top = 0
     Width = 748
-    Height = 164
+    Height = 145
     Align = alClient
     TabOrder = 0
-    ExplicitHeight = 90
+    ExplicitHeight = 144
     object Label1: TLabel
       Left = 40
       Top = 120
@@ -44,7 +44,7 @@ object F_Main: TF_Main
         Left = 10
         Top = 18
         Width = 93
-        Height = 21
+        Height = 22
         Date = 38613.999988425930000000
         Time = 38613.999988425930000000
         Font.Charset = DEFAULT_CHARSET
@@ -137,16 +137,16 @@ object F_Main: TF_Main
   end
   object Panel2: TPanel
     Left = 0
-    Top = 164
+    Top = 145
     Width = 748
     Height = 41
     Align = alBottom
     TabOrder = 1
-    ExplicitTop = 90
+    ExplicitTop = 144
   end
   object MainMenu1: TMainMenu
-    Left = 392
-    Top = 96
+    Left = 432
+    Top = 30
     object N1: TMenuItem
       Caption = #1060#1072#1081#1083#1099
       object N2: TMenuItem
@@ -180,8 +180,8 @@ object F_Main: TF_Main
     end
   end
   object ActionList1: TActionList
-    Left = 480
-    Top = 96
+    Left = 512
+    Top = 30
     object Action_Exit: TAction
       Category = 'Files'
       Caption = #1042#1099#1093#1086#1076' '#1080#1079' '#1087#1088#1086#1075#1088#1072#1084#1084#1099
@@ -217,7 +217,7 @@ object F_Main: TF_Main
     AutoConnect = False
     ConnectKind = ckRunningOrNew
     AutoQuit = False
-    Left = 288
-    Top = 114
+    Left = 366
+    Top = 36
   end
 end

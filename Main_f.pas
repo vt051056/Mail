@@ -74,7 +74,8 @@ implementation
 
 {$R *.dfm}
 
-uses Orders_f, dm_orders, users_f, ReadMail, myfuncs, import_bank;
+uses Orders_f, dm_orders, users_f, ReadMail,
+myfuncs, import_bank;
 
 procedure TF_Main.WndProc(var Message: TMessage);
 begin
